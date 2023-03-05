@@ -11,7 +11,7 @@ class useController{
             let n = Math.round(Math.random()*9)
             otp=otp+n
         }
-        // console.log(otp)
+        
 
         const {email}= req.body
         let info =  transporter.sendMail({
