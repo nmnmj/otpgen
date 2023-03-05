@@ -9,13 +9,16 @@
         var otp=''
         function trueotp(){
             if(otp==true){
-                alert("trueotp")
+                alert("valid OTP")
             }
         }
     </script>
 </head>
 <body>
-    <input type="number" name="otp" id="otp">
-    <button onclick="if(document.getElementById('otp').value=='<%=otp%>'){alert('success'); otp = true; trueotp()}else{alert('wrong')}">Check</button>
+    <div style="text-align: center;">
+        <h1>Enter OTP to check its valid</h1>
+        <input type="number" name="otp" id="otp">
+        <button onclick="if(document.getElementById('otp').value=='<%=otp%>'){alert('success'); otp = true; trueotp()}else{alert('wrong')}">Check</button>
+    </div>
 </body>
 </html>
