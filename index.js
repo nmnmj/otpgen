@@ -8,7 +8,9 @@ app.use(cors())
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-app.use("/", web)
+app.use("/", (req,res)=>{
+    res.send("hi")
+})
 const port = process.env.PORT || 3000
 
 
