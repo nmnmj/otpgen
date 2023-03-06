@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 app.use("/", (req,res)=>{
-    res.send("hi")
+    res.render("index.ejs")
 })
 const port = process.env.PORT || 3000
 
